@@ -1,0 +1,18 @@
+.contact-detail {
+    text-align: center;
+    padding: 2rem;
+    color: powderblue;
+}
+
+.contact-detail button {
+    position: absolute;
+  top: 5rem; 
+  left: 1rem;
+  font-size: 1.5rem; /* Make it bigger */
+  padding: 0.75rem 1.5rem; /* Add extra padding for size */
+  color: white;
+  background-color: blue;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
