@@ -18,8 +18,10 @@ export const ContactProvider = ({ children }) => {
     { id: 10, firstName: "Walid", lastName: "Tanouyat", phoneNumber: "0640878609", email: "walid@doe.com" },
   ]);
 
+  const [SearchContact, setSearchContact] = useState('');
+
   return (
-    <ContactContext.Provider value={{ contacts }}>
+    <ContactContext.Provider value={{ contacts, SearchContact, setSearchContact }}>
       {children}
     </ContactContext.Provider>
   );

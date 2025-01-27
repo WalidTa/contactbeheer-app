@@ -3,10 +3,17 @@ import { ContactContext } from '../Context/ContactContext';
 import './Contacts.css';
 
   const Contacts = () => {
-    const { contacts } = useContext(ContactContext);
+    const { contacts, SearchContact } = useContext(ContactContext);
+
+    const filteredContacts = contacts.filter((contact) =>
+        `${contact.firstName} ${contact.lastName}`
+    .toLowerCase()
+    .includes(SearchContact.toLowerCase())
+);
+
     return (
       <div className="contact-list">
-        {contacts.map((contact) => (
+        {filteredContacts.map((contact) => (
           <div key={contact.id} className="contact-row">
             <div className="contact-logo">
               <img

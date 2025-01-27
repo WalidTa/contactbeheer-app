@@ -1,11 +1,11 @@
 .contact-list {
-    margin: 2rem auto;
+    margin: 0 auto;
     width: 80%;
     max-width: 600px;
     background-color: #28365e; 
     border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-    padding: 1rem;
+    padding-top: 1rem;
     color: powderblue;
 }
 
