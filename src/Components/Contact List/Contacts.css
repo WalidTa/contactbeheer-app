@@ -5,15 +5,17 @@
     background-color: #28365e; 
     border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-    padding-top: 1rem;
     color: powderblue;
+    max-height: 550px;
+    overflow-y: auto;
 }
 
 .contact-row {
     display: flex;
     align-items: center;
     padding: 1rem 1rem;
-    border-bottom: 1px solid black;
+    border: 1.5px solid black;
+    text-decoration: none;
 }
 
 .contact-logo img {
@@ -26,6 +28,8 @@
 .contact-details {
     display: flex;
     flex-direction: column;
+    text-decoration: none;
+    color: powderblue;
 }
 
 .contact-name {
