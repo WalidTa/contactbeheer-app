@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { ContactContext } from '../Context/ContactContext';
+import { ContactContext } from '../../Context/ContactContext';
 import './Contacts.css';
 import { Link } from 'react-router-dom';
 

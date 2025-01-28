@@ -2,8 +2,8 @@ import React from 'react';
 import { render, screen, fireEvent, cleanup } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
 import { ContactContext } from '../Context/ContactContext';
-import SearchBar from '../Components/SearchBar';
-import Contacts from '../Components/Contacts';
+import SearchBar from '../Components/Search Bar/SearchBar';
+import Contacts from '../Components/Contact List/Contacts';
 import '@testing-library/jest-dom';
 
 afterEach(() => {

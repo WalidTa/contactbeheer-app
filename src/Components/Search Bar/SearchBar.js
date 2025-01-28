@@ -1,5 +1,5 @@
 import React, { use, useContext } from 'react';
-import { ContactContext } from '../Context/ContactContext';
+import { ContactContext } from '../../Context/ContactContext';
 import './SearchBar.css'
 
 const SearchBar = () => {

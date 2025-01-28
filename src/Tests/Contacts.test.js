@@ -2,7 +2,7 @@ import React from 'react';
 import { render, screen, cleanup } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
 import { ContactContext } from '../Context/ContactContext';
-import Contacts from '../Components/Contacts';
+import Contacts from '../Components/Contact List/Contacts';
 import '@testing-library/jest-dom';
 
 afterEach(() => {

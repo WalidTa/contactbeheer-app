@@ -1,9 +1,9 @@
 import React from 'react';
 import './App.css';
-import Contacts from './Components/Contacts';
-import SearchBar from './Components/SearchBar';
+import Contacts from './Components/Contact List/Contacts';
+import SearchBar from './Components/Search Bar/SearchBar';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
-import ContactDetail from './Components/ContactDetails';
+import ContactDetail from './Components/Contact Details/ContactDetails';
 
 const App = () => {
   return (

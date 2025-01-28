@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { ContactContext } from '../Context/ContactContext';
-import Contacts from './Contacts';
+import { ContactContext } from '../../Context/ContactContext';
+import Contacts from '../Contact List/Contacts';
 import './ContactDetails.css';
 
 const ContactDetail = () => {
