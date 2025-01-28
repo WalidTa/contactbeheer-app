@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 
   const Contacts = () => {
     const { contacts, SearchContact } = useContext(ContactContext);
+
     //filter functionality
     const filteredContacts = contacts.filter((contact) =>
         `${contact.firstName} ${contact.lastName}`
@@ -12,6 +13,7 @@ import { Link } from 'react-router-dom';
     .includes(SearchContact.toLowerCase())
 );
 
+    //display the filtered list
     return (
       <div className="contact-list">
         {filteredContacts.map((contact) => (
@@ -26,7 +28,8 @@ import { Link } from 'react-router-dom';
                 alt="Contact"
               />
             </div>
-            <div className="contact-details">
+            {/* compact view of contact */}
+            <div className="contact-details"> 
               <span className="contact-name">{contact.firstName} {contact.lastName}</span>
               <span className="contact-phone">{contact.phoneNumber}</span>
             </div>

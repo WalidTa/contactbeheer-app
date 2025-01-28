@@ -9,12 +9,15 @@ const ContactDetail = () => {
     const { contacts } = useContext(ContactContext);
     const navigate = useNavigate();
 
+    //find contact by ID
     const contact = contacts.find((contact) => contact.id === parseInt(id));
 
+    //error message if not found
     if (!contact) {
         return <p> Error, contact not found</p>;
     }
 
+    //display details
     return (
         <div className="contact-detail">
           <h1>{contact.firstName} {contact.lastName}</h1>

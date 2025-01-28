@@ -7,10 +7,11 @@ const SearchBar = () => {
 
     return(
         <div className='search-bar'>
-            <input 
+            <input //input field
             type='text'
             placeholder='Search for contacts'
             value={SearchContact}
+            //functions as the text is typed
             onChange={(e) => setSearchContact(e.target.value)}
             />
         </div>

@@ -16,6 +16,7 @@ const App = () => {
       </header>
       <main>
       <Routes>
+        {/*Displays Search bar and Contacts  */}
             <Route
               path="/"
               element={
